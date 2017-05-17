@@ -1,0 +1,107 @@
+* {
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, sans-serif;	
+	background: #f9f8ed;
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.default {
+	width: 100%;
+	float: left;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+h2 {
+	font-size: 125%;
+	font-weight: 200;
+	margin-top: 0;
+	border: 1px solid #444443;
+	border-top: 0;
+	border-right: 0;
+	padding: 5px;
+
+}
+
+article {
+	border: 1px solid #444443;
+	margin: 12px 5px;
+	background-color: #ffd391;
+	padding-top: 20px;
+	position: relative;
+}
+
+article > h2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	text-align: center;
+}
+
+p {
+	padding: 10px;
+}
+
+#chicken {
+	background-color: #525156;
+	color: #fff;
+}
+
+#beef {
+	background-color: #e68a8a;
+}
+
+#sushi {
+	background-color: #f19b52;
+}
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.3%;
+	}
+	.col-lg-4 > article {
+		height: 400px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.col-md-6 > article {
+		height: 280px;
+	}
+}
+
+
+
+
+
